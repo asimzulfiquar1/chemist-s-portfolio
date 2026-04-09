@@ -151,19 +151,10 @@ export interface Skill {
 
 export const skillCategories = [
   {
-    title: "Laboratory Expertise",
-    icon: "flask",
-    skills: [
-      { name: "Chemical Synthesis", level: "Expert" as SkillLevel },
-      { name: "Sample Preparation & Handling", level: "Expert" as SkillLevel },
-      { name: "Laboratory Safety Protocols", level: "Expert" as SkillLevel },
-      { name: "Equipment Calibration", level: "Medium" as SkillLevel },
-    ],
-  },
-  {
     title: "Analytical Techniques",
     icon: "microscope",
     skills: [
+      { name: "Chemical Synthesis", level: "Expert" as SkillLevel },
       { name: "UV-Vis Spectroscopy", level: "Medium" as SkillLevel },
       { name: "Chromatography (HPLC)", level: "Medium" as SkillLevel },
       { name: "Spectroil M", level: "Medium" as SkillLevel },
@@ -180,6 +171,7 @@ export const skillCategories = [
       { name: "Chemical Dosing & Monitoring", level: "Expert" as SkillLevel },
       { name: "Technical Documentation", level: "Expert" as SkillLevel },
       { name: "Data Analysis & Visualization", level: "Medium" as SkillLevel },
+      { name: "Process Optimization", level: "Medium" as SkillLevel },
     ],
   },
   {
@@ -187,9 +179,11 @@ export const skillCategories = [
     icon: "computer",
     skills: [
       { name: "Microsoft Office Suite", level: "Expert" as SkillLevel },
-      { name: "Advanced Excel", level: "Medium" as SkillLevel },
+      { name: "Advanced Excel", level: "Expert" as SkillLevel },
       { name: "Data Processing", level: "Medium" as SkillLevel },
       { name: "Research Software", level: "Beginner" as SkillLevel },
+      { name: "Python", level: "Beginner" as SkillLevel },
+      { name: "LaTeX", level: "Medium" as SkillLevel },
     ],
   },
 ];
