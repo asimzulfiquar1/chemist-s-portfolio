@@ -10,11 +10,12 @@ const ExperienceEducation = () => {
     <section id="experience" className="section-padding bg-secondary/30">
       <div className="container mx-auto">
         <ScrollReveal>
+          <p className="text-accent font-medium tracking-widest uppercase text-sm mb-2 text-center">Where Science Meets Practice</p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
-            Experience & Education
+            Journey So Far
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-            My professional journey and academic foundation in chemistry
+            Building expertise through hands-on research, industrial problem-solving, and continuous learning
           </p>
         </ScrollReveal>
 
