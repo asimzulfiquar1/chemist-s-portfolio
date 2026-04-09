@@ -6,10 +6,12 @@ import SkillsSection from "@/components/SkillsSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import BenzeneBackground from "@/components/BenzeneBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <BenzeneBackground />
       <Navbar />
       <HeroSection />
       <ExperienceEducation />
