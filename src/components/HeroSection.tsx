@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Mail } from "lucide-react";
+import { ArrowRight, FlaskConical, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -14,26 +14,22 @@ const HeroSection = () => {
           <ScrollReveal>
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-medium">
-                Chemistry Graduate & Industrial Chemist
+                Research-Oriented Chemist
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
                 Muhammad Asim
                 <span className="text-gradient block">Zulfiquar</span>
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-                Motivated Chemistry professional with hands-on experience in power plant operations. 
-                Skilled in industrial processes, quality control, and analytical techniques — passionate 
-                about applying chemical knowledge in real-world settings.
+                Exploring the intersection of analytical chemistry, industrial processes, and 
+                product innovation. Driven by curiosity — building solutions through science.
               </p>
               <div className="flex flex-wrap gap-3 pt-2">
                 <Button onClick={() => scrollTo("#projects")} className="gap-2">
-                  View Projects <ArrowRight size={16} />
+                  <FlaskConical size={16} /> Explore My Research
                 </Button>
                 <Button variant="outline" onClick={() => scrollTo("#contact")} className="gap-2">
-                  <Mail size={16} /> Contact Me
-                </Button>
-                <Button variant="secondary" className="gap-2">
-                  <Download size={16} /> Download CV
+                  <Mail size={16} /> Let's Collaborate
                 </Button>
               </div>
             </div>

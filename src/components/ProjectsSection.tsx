@@ -12,11 +12,12 @@ const ProjectsSection = () => {
     <section id="projects" className="section-padding">
       <div className="container mx-auto">
         <ScrollReveal>
+          <p className="text-accent font-medium tracking-widest uppercase text-sm mb-2 text-center">What I've Built</p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
-            Projects & Research
+            Research & Innovation
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-            Applied chemistry in product development, industrial analysis, and academic research
+            From lab bench to real-world impact — here's how I apply chemistry to solve problems
           </p>
         </ScrollReveal>
 
