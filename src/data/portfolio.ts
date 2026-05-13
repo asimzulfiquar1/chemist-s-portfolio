@@ -90,6 +90,13 @@ export const projects = [
       "Optimized electrolyte ratios for enhanced hydration",
       "Achieved consistent flavor stability across batches",
     ],
+    gallery: [
+      { src: "/src/assets/nitrone-4.jpg", caption: "Nitrone product concept & branding" },
+      { src: "/src/assets/nitrone-5.jpg", caption: "Selected as Top 10 Startup — Regional Plan9 Faisalabad" },
+      { src: "/src/assets/nitrone-3.jpg", caption: "3rd Position — Zindigi Prize UAF Business Ideas Competition 2023" },
+      { src: "/src/assets/nitrone-2.jpg", caption: "Nitrone team at the awards ceremony" },
+      { src: "/src/assets/nitrone-1.jpg", caption: "Receiving the Shield of Acknowledgement" },
+    ],
   },
   {
     id: "water-quality-analysis",
