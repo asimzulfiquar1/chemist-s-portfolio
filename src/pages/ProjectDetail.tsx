@@ -53,6 +53,24 @@ const ProjectDetail = () => {
             </div>
           </ScrollReveal>
 
+          {project.links && project.links.length > 0 && (
+            <ScrollReveal delay={125}>
+              <div className="flex flex-wrap gap-3 mb-8">
+                {project.links.map((link) => (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent/10 text-accent text-sm font-medium hover:bg-accent/20 transition-colors"
+                  >
+                    {link.label} <ExternalLink size={14} />
+                  </a>
+                ))}
+              </div>
+            </ScrollReveal>
+          )}
+
           {sections.map((section, si) => (
             <ScrollReveal key={section.title} delay={150 + si * 50}>
               <div className="glass-card rounded-xl p-6 mb-6">
