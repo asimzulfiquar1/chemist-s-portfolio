@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, Target, User, Cog, BarChart3, Camera } from "lucide-react";
+import { ArrowLeft, Target, User, Cog, BarChart3, Camera, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/portfolio";
 import ScrollReveal from "@/components/ScrollReveal";
