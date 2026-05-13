@@ -1,6 +1,7 @@
 import { ArrowRight, FlaskConical, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import profileImg from "@/assets/profile.jpg";
 
 const HeroSection = () => {
   const scrollTo = (id: string) => {
@@ -37,13 +38,12 @@ const HeroSection = () => {
           <ScrollReveal delay={200}>
             <div className="flex justify-center">
               <div className="relative">
-                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl bg-gradient-to-br from-accent/20 via-science/10 to-primary/20 flex items-center justify-center border border-border/50 overflow-hidden">
-                  <div className="text-center space-y-3 p-6">
-                    <div className="w-24 h-24 mx-auto rounded-full bg-accent/20 flex items-center justify-center">
-                      <span className="text-4xl font-heading font-bold text-accent">MA</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">Your photo here</p>
-                  </div>
+                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl bg-gradient-to-br from-accent/20 via-science/10 to-primary/20 border border-border/50 overflow-hidden">
+                  <img
+                    src={profileImg}
+                    alt="Muhammad Asim Zulfiquar"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -top-4 -right-4 w-20 h-20 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center animate-float">
                   <span className="text-2xl">⚗️</span>
