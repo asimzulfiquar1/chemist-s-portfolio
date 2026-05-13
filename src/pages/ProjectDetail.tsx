@@ -73,10 +73,28 @@ const ProjectDetail = () => {
           ))}
 
           <ScrollReveal delay={300}>
-            <div className="glass-card rounded-xl p-8 text-center">
-              <Camera className="mx-auto text-muted-foreground mb-3" size={32} />
-              <h3 className="font-heading font-semibold mb-2">Project Gallery</h3>
-              <p className="text-sm text-muted-foreground">Photos and videos from this project will be displayed here.</p>
+            <div className="glass-card rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Camera className="text-accent" size={20} />
+                <h3 className="font-heading font-semibold">Project Gallery</h3>
+              </div>
+              {project.gallery && project.gallery.length > 0 ? (
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {project.gallery.map((item, i) => (
+                    <figure key={i} className="rounded-lg overflow-hidden border border-border/50 bg-background/40">
+                      <img
+                        src={item.src}
+                        alt={item.caption}
+                        loading="lazy"
+                        className="w-full h-56 object-cover"
+                      />
+                      <figcaption className="p-3 text-xs text-muted-foreground">{item.caption}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm text-muted-foreground text-center py-6">Photos and videos from this project will be displayed here.</p>
+              )}
             </div>
           </ScrollReveal>
         </div>
