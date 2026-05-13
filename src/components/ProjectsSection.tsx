@@ -16,8 +16,11 @@ const ProjectsSection = () => {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
             Research & Innovation
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-4">
             From lab bench to real-world impact — here's how I apply chemistry to solve problems
+          </p>
+          <p className="text-accent text-center text-sm font-medium mb-16">
+            Click any project to explore the full story, methodology, and results.
           </p>
         </ScrollReveal>
 
