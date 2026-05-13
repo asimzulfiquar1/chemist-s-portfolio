@@ -1,3 +1,9 @@
+import nitrone1 from "@/assets/nitrone-1.jpg";
+import nitrone2 from "@/assets/nitrone-2.jpg";
+import nitrone3 from "@/assets/nitrone-3.jpg";
+import nitrone4 from "@/assets/nitrone-4.jpg";
+import nitrone5 from "@/assets/nitrone-5.jpg";
+
 export const experiences = [
   {
     id: "saif-power-plant",
@@ -91,11 +97,11 @@ export const projects = [
       "Achieved consistent flavor stability across batches",
     ],
     gallery: [
-      { src: "/src/assets/nitrone-4.jpg", caption: "Nitrone product concept & branding" },
-      { src: "/src/assets/nitrone-5.jpg", caption: "Selected as Top 10 Startup — Regional Plan9 Faisalabad" },
-      { src: "/src/assets/nitrone-3.jpg", caption: "3rd Position — Zindigi Prize UAF Business Ideas Competition 2023" },
-      { src: "/src/assets/nitrone-2.jpg", caption: "Nitrone team at the awards ceremony" },
-      { src: "/src/assets/nitrone-1.jpg", caption: "Receiving the Shield of Acknowledgement" },
+      { src: nitrone4, caption: "Nitrone product concept & branding" },
+      { src: nitrone5, caption: "Selected as Top 10 Startup — Regional Plan9 Faisalabad" },
+      { src: nitrone3, caption: "3rd Position — Zindigi Prize UAF Business Ideas Competition 2023" },
+      { src: nitrone2, caption: "Nitrone team at the awards ceremony" },
+      { src: nitrone1, caption: "Receiving the Shield of Acknowledgement" },
     ],
   },
   {
