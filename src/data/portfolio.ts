@@ -96,6 +96,10 @@ export const projects = [
       "Optimized electrolyte ratios for enhanced hydration",
       "Achieved consistent flavor stability across batches",
     ],
+    links: [
+      { label: "Instagram", url: "https://www.instagram.com/nitronbooster/" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/company/nitrone/" },
+    ],
     gallery: [
       { src: nitrone4, caption: "Nitrone product concept & branding" },
       { src: nitrone5, caption: "Selected as Top 10 Startup — Regional Plan9 Faisalabad" },
