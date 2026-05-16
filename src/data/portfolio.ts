@@ -28,13 +28,13 @@ export const experiences = [
     ],
     gallery: [
       { type: "image", src: saif1, caption: "On-site at Saif Power Plant" },
-      { type: "video", src: "/saif/saif-1.mp4", caption: "Plant operations" },
+      { type: "video", src: "/saif/saif-1.mp4", caption: "Spectroil M operation" },
       { type: "video", src: "/saif/saif-2.mp4", caption: "Lab & analysis work" },
-      { type: "video", src: "/saif/saif-3.mp4", caption: "Water treatment systems" },
-      { type: "video", src: "/saif/saif-4.mp4", caption: "Process monitoring" },
-      { type: "video", src: "/saif/saif-5.mp4", caption: "Chemical dosing" },
+      { type: "video", src: "/saif/saif-3.mp4", caption: "Diesel checking facility" },
+      { type: "video", src: "/saif/saif-4.mp4", caption: "Rainy day at plant" },
+      { type: "video", src: "/saif/saif-5.mp4", caption: "Fuel testing" },
       { type: "video", src: "/saif/saif-6.mp4", caption: "Inside the facility" },
-      { type: "video", src: "/saif/saif-7.mp4", caption: "Daily operations" },
+      { type: "video", src: "/saif/saif-7.mp4", caption: "Sulphuric acid (H2SO4) unloading" },
     ],
   },
   {
