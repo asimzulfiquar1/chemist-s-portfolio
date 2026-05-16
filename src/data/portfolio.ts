@@ -55,6 +55,13 @@ export const experiences = [
       "Applied DOE methodology to optimize product quality",
       "Managed end-to-end product development lifecycle",
     ],
+    gallery: [
+      { type: "image", src: nitrone4, caption: "Nitrone product concept & branding" },
+      { type: "image", src: nitrone5, caption: "Selected as Top 10 Startup — Regional Plan9 Faisalabad" },
+      { type: "image", src: nitrone3, caption: "3rd Position — Zindigi Prize UAF Business Ideas Competition 2023" },
+      { type: "image", src: nitrone2, caption: "Nitrone team at the awards ceremony" },
+      { type: "image", src: nitrone1, caption: "Receiving the Shield of Acknowledgement" },
+    ],
   },
 ];
 
@@ -223,6 +230,12 @@ export const certifications = [
     icon: "trophy",
   },
   {
+    title: "Selected as Top 10 Startup — Regional Plan9 Faisalabad",
+    highlight: "Top 10 Startup",
+    icon: "trophy",
+    image: nitrone5,
+  },
+  {
     title: "Amal Career-Prep Fellowship",
     highlight: "Fellow",
     icon: "award",
@@ -236,6 +249,7 @@ export const certifications = [
     title: "Zindagi Business Idea Competition",
     highlight: "3rd Place Winner",
     icon: "medal",
+    image: nitrone3,
   },
   {
     title: "Rotary Youth Leadership Awards",
