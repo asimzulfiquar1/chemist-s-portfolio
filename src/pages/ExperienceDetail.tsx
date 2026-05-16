@@ -76,11 +76,45 @@ const ExperienceDetail = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={250}>
-            <div className="glass-card rounded-xl p-8 text-center">
-              <Camera className="mx-auto text-muted-foreground mb-3" size={32} />
-              <h3 className="font-heading font-semibold mb-2">Gallery</h3>
-              <p className="text-sm text-muted-foreground">Photos and videos from this experience will be displayed here.</p>
-            </div>
+            {(experience as any).gallery && (experience as any).gallery.length > 0 ? (
+              <div className="glass-card rounded-xl p-6">
+                <h3 className="font-heading font-semibold mb-4 flex items-center gap-2">
+                  <Camera size={18} /> Gallery
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {(experience as any).gallery.map((item: any, i: number) => (
+                    <figure key={i} className="rounded-lg overflow-hidden bg-muted/30">
+                      {item.type === "video" ? (
+                        <video
+                          src={item.src}
+                          controls
+                          playsInline
+                          className="w-full h-64 object-cover bg-black"
+                        />
+                      ) : (
+                        <img
+                          src={item.src}
+                          alt={item.caption}
+                          loading="lazy"
+                          className="w-full h-64 object-cover"
+                        />
+                      )}
+                      {item.caption && (
+                        <figcaption className="text-xs text-muted-foreground p-3">
+                          {item.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="glass-card rounded-xl p-8 text-center">
+                <Camera className="mx-auto text-muted-foreground mb-3" size={32} />
+                <h3 className="font-heading font-semibold mb-2">Gallery</h3>
+                <p className="text-sm text-muted-foreground">Photos and videos from this experience will be displayed here.</p>
+              </div>
+            )}
           </ScrollReveal>
         </div>
       </div>
