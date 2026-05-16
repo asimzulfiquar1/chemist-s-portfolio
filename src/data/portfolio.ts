@@ -3,6 +3,7 @@ import nitrone2 from "@/assets/nitrone-2.jpg";
 import nitrone3 from "@/assets/nitrone-3.jpg";
 import nitrone4 from "@/assets/nitrone-4.jpg";
 import nitrone5 from "@/assets/nitrone-5.jpg";
+import saif1 from "@/assets/saif-1.jpg";
 
 export const experiences = [
   {
@@ -24,6 +25,16 @@ export const experiences = [
       "Maintained 100% compliance with ISO quality standards",
       "Optimized water treatment processes for improved efficiency",
       "Contributed to safety protocols and environmental monitoring",
+    ],
+    gallery: [
+      { type: "image", src: saif1, caption: "On-site at Saif Power Plant" },
+      { type: "video", src: "/saif/saif-1.mp4", caption: "Plant operations" },
+      { type: "video", src: "/saif/saif-2.mp4", caption: "Lab & analysis work" },
+      { type: "video", src: "/saif/saif-3.mp4", caption: "Water treatment systems" },
+      { type: "video", src: "/saif/saif-4.mp4", caption: "Process monitoring" },
+      { type: "video", src: "/saif/saif-5.mp4", caption: "Chemical dosing" },
+      { type: "video", src: "/saif/saif-6.mp4", caption: "Inside the facility" },
+      { type: "video", src: "/saif/saif-7.mp4", caption: "Daily operations" },
     ],
   },
   {
