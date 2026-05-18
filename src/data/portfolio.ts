@@ -225,15 +225,12 @@ export const skillCategories = [
 
 export const certifications = [
   {
+    id: "plan9-faisalabad",
     title: "Regional Plan 9 Faisalabad Cohort 6",
     highlight: "1st Position",
     icon: "trophy",
-  },
-  {
-    title: "Selected as Top 10 Startup — Regional Plan9 Faisalabad",
-    highlight: "Top 10 Startup",
-    icon: "trophy",
     image: nitrone5,
+    description: "Selected as Top 10 Startup at the Regional Plan9 Faisalabad Cohort 6 — a milestone recognition for the Nitrone Sports Drink venture.",
   },
   {
     title: "Amal Career-Prep Fellowship",
@@ -246,10 +243,12 @@ export const certifications = [
     icon: "certificate",
   },
   {
+    id: "zindagi-business-idea",
     title: "Zindagi Business Idea Competition",
     highlight: "3rd Place Winner",
     icon: "medal",
     image: nitrone3,
+    description: "Awarded 3rd Place at the Zindagi Business Idea Competition for pitching the Nitrone Sports Drink concept.",
   },
   {
     title: "Rotary Youth Leadership Awards",
