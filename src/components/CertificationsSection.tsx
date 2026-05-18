@@ -1,4 +1,5 @@
 import { Trophy, Award, BadgeCheck, Medal, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
 import { certifications } from "@/data/portfolio";
 
@@ -26,26 +27,22 @@ const CertificationsSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
           {certifications.map((cert, i) => {
             const Icon = iconMap[cert.icon] || Award;
+            const id = (cert as any).id;
+            const card = (
+              <div className="glass-card rounded-xl p-6 text-center hover-lift h-full">
+                <div className="p-3 rounded-full bg-accent/10 w-fit mx-auto mb-4">
+                  <Icon className="text-accent" size={24} />
+                </div>
+                <h4 className="font-heading font-semibold text-sm mb-2">{cert.title}</h4>
+                <span className="text-xs font-medium text-accent">{cert.highlight}</span>
+                {id && (
+                  <p className="text-[10px] uppercase tracking-wider text-muted-foreground mt-3">Click to view →</p>
+                )}
+              </div>
+            );
             return (
               <ScrollReveal key={i} delay={i * 80}>
-                <div className="glass-card rounded-xl p-6 text-center hover-lift h-full">
-                  {(cert as any).image ? (
-                    <div className="w-full h-40 rounded-lg overflow-hidden mb-4 bg-muted/30">
-                      <img
-                        src={(cert as any).image}
-                        alt={cert.title}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ) : (
-                    <div className="p-3 rounded-full bg-accent/10 w-fit mx-auto mb-4">
-                      <Icon className="text-accent" size={24} />
-                    </div>
-                  )}
-                  <h4 className="font-heading font-semibold text-sm mb-2">{cert.title}</h4>
-                  <span className="text-xs font-medium text-accent">{cert.highlight}</span>
-                </div>
+                {id ? <Link to={`/certification/${id}`}>{card}</Link> : card}
               </ScrollReveal>
             );
           })}
