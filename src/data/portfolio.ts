@@ -113,6 +113,7 @@ export const experiences = [
     duration: "2024 – Present",
     summary: "Applying data analytics, visualization, and programming to real datasets — building dashboards in Power BI, Excel, and Python to extract insights.",
     responsibilities: [
+      "Applied mathematical and statistical models using Python with pandas, NumPy, SciPy, and scikit-learn to achieve these results",
       "Built interactive dashboards in Power BI and Excel for sales, sports, and customer datasets",
       "Performed exploratory data analysis using Python (pandas, matplotlib, seaborn)",
       "Cleaned, transformed, and visualized large datasets to uncover trends",
