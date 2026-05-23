@@ -4,6 +4,29 @@ import nitrone3 from "@/assets/nitrone-3.jpg";
 import nitrone4 from "@/assets/nitrone-4.jpg";
 import nitrone5 from "@/assets/nitrone-5.jpg";
 import saif1 from "@/assets/saif-1.jpg";
+import da1 from "@/assets/da-1.jpg";
+import da2 from "@/assets/da-2.jpg";
+import da3 from "@/assets/da-3.jpg";
+import da4 from "@/assets/da-4.jpg";
+import da5 from "@/assets/da-5.jpg";
+import da6 from "@/assets/da-6.jpg";
+import da7 from "@/assets/da-7.jpg";
+import da8 from "@/assets/da-8.jpg";
+import da9 from "@/assets/da-9.jpg";
+import da10 from "@/assets/da-10.jpg";
+
+const dataAnalyticsGallery = [
+  { type: "image" as const, src: da1, caption: "Olympic Dataset Analysis Dashboard — Overview" },
+  { type: "image" as const, src: da2, caption: "Olympic Dashboard — Athletes view" },
+  { type: "image" as const, src: da3, caption: "Olympic Dashboard — Historical medals by year" },
+  { type: "image" as const, src: da4, caption: "Super Store Sales — Power BI dashboard" },
+  { type: "image" as const, src: da5, caption: "Bike Sales Data — Excel dashboard" },
+  { type: "image" as const, src: da6, caption: "Customer count by age group & gender" },
+  { type: "image" as const, src: da7, caption: "Total spend by age group" },
+  { type: "image" as const, src: da8, caption: "Top states by total purchase amount" },
+  { type: "image" as const, src: da9, caption: "Top 10 best-selling products" },
+  { type: "image" as const, src: da10, caption: "Customer distribution by gender" },
+];
 
 export const experiences = [
   {
@@ -62,6 +85,44 @@ export const experiences = [
       { type: "image", src: nitrone2, caption: "Nitrone team at the awards ceremony" },
       { type: "image", src: nitrone1, caption: "Receiving the Shield of Acknowledgement" },
     ],
+  },
+  {
+    id: "my-nutrition-store",
+    title: "Intern",
+    company: "My Nutrition Store",
+    location: "Faisalabad, Pakistan",
+    duration: "Jun 2023 – Aug 2023",
+    summary: "Internship at a pharmaceutical and wellness company specializing in multivitamins and wellness products, focused on quality control and pharma operations.",
+    responsibilities: [
+      "Worked on quality control of medicines, multivitamins, and wellness products",
+      "Assisted with raw material inspection and finished-product checks",
+      "Supported documentation aligned with pharmaceutical SOPs and GMP practices",
+      "Helped with packaging quality, labeling, and batch verification",
+      "Observed and learned end-to-end pharma operations of a wellness brand",
+    ],
+    achievements: [
+      "Gained hands-on exposure to pharmaceutical QC workflows",
+      "Contributed to maintaining consistent product quality across batches",
+    ],
+  },
+  {
+    id: "data-analytics-programming",
+    title: "Data Analytics & Programming",
+    company: "Self-Directed Practice & Google Certification",
+    location: "Remote",
+    duration: "2024 – Present",
+    summary: "Applying data analytics, visualization, and programming to real datasets — building dashboards in Power BI, Excel, and Python to extract insights.",
+    responsibilities: [
+      "Built interactive dashboards in Power BI and Excel for sales, sports, and customer datasets",
+      "Performed exploratory data analysis using Python (pandas, matplotlib, seaborn)",
+      "Cleaned, transformed, and visualized large datasets to uncover trends",
+      "Communicated insights through clear charts, KPIs, and storytelling",
+    ],
+    achievements: [
+      "Completed the Google Data Analytics Professional Certificate",
+      "Delivered multiple end-to-end analytics projects with publishable dashboards",
+    ],
+    gallery: dataAnalyticsGallery,
   },
 ];
 
@@ -241,6 +302,9 @@ export const certifications = [
     title: "Google Data Analytics Professional Certificate",
     highlight: "Certified",
     icon: "certificate",
+    id: "google-data-analytics",
+    description: "Completed the Google Data Analytics Professional Certificate, covering data cleaning, analysis, visualization, SQL, R, and dashboarding. Below are sample dashboards and analyses produced during and after the program.",
+    gallery: dataAnalyticsGallery,
   },
   {
     id: "zindagi-business-idea",
