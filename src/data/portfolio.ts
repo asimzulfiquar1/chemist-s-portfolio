@@ -132,7 +132,7 @@ export const education = [
     degree: "Bachelor of Science (BS) in Chemistry",
     institution: "Government College University Faisalabad",
     duration: "Nov 2020 – Nov 2024",
-    gpa: "3.53/4.00",
+    gpa: "3.23/4.00",
     highlights: [
       "Laboratory & Research Skills",
       "Physical Chemistry & Chemical Kinetics",
@@ -146,7 +146,7 @@ export const education = [
     degree: "Higher Secondary School Certificate (Pre-Medical)",
     institution: "Superior Group of Colleges, Jaranwala",
     duration: "Jun 2018 – Sep 2020",
-    gpa: null,
+    gpa: "780/1100",
     highlights: [],
   },
 ];
