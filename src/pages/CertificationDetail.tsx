@@ -48,6 +48,26 @@ const CertificationDetail = () => {
               </figure>
             </ScrollReveal>
           )}
+
+          {cert.gallery && cert.gallery.length > 0 && (
+            <div className="mt-12">
+              <ScrollReveal>
+                <h2 className="text-2xl font-heading font-bold mb-6">Gallery</h2>
+              </ScrollReveal>
+              <div className="grid sm:grid-cols-2 gap-5">
+                {cert.gallery.map((item: any, i: number) => (
+                  <ScrollReveal key={i} delay={i * 60}>
+                    <figure className="glass-card rounded-xl overflow-hidden">
+                      <img src={item.src} alt={item.caption} className="w-full h-auto object-contain bg-muted/30" />
+                      {item.caption && (
+                        <figcaption className="text-xs text-muted-foreground p-3">{item.caption}</figcaption>
+                      )}
+                    </figure>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <Footer />
